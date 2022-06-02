@@ -25,7 +25,7 @@ Later...
 
 ### Education
 
-I graduated from Polessy State University with a degree an economics. I just now go in the first cource of programming.
+I graduated from Polessy State University with a degree an economics. I just now go in the first course of programming.
 
 ### English
 
