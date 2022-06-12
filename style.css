@@ -1,3 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(233, 231, 231);
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header,
+footer {
     background: gray;
+}
+
+header {
+    padding-top: 5px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    line-height: 50px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #252525;
+    transition: color 0.5s;
+    margin: 0 5px;
+}
+
+.nav-link:hover {
+    color: #939594;
+}
+
+.me-container {
+    display: flex;
+    flex-direction: row;
+    justify content: space-around;
+}
+
+
+}
+. h2 {
+    text-transform: uppercase;
+}
+.image {
+    padding: 10px;
+}
+.myfoto {
+    border-radius: 50%;
+}
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.summary,
+.contacts,
+.skills,
+.english,
+.courses,
+.code,
+.education,
+.projects {
+    width: 45%;
+    height: 270px;
+    padding: 20px;
+    margin: 0 20px;
+    border-top: 5px dotted rgba(191, 189, 189, 0.7);
+}
+@media (max-width: 768px) {
+    .summary,
+    .contacts,
+    .skills,
+    .english,
+    .courses,
+    .code,
+    .education,
+    .projects {
+        width: 100%;
+    }
+}
+.contacts a {
+    text-decoration: none;
+    color: #252525;
+    transition: color 0.5s;
+}
+.contacts a:hover {
+    color: #939594;
+}
+code {
+    position: relative;
+    left: 35px;
+    font-size: large;
+}
+.main-container a {
+    display: inline-block;
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+.skills li,
+.courses li {
+    list-style-image: url(./assets/editsquare_120033.svg);
+    color: black;
+}
+.main-container ul img {
+    width: 25px;
+    height: 18px;
 }
