@@ -49,7 +49,7 @@
             <section class="main-container">
                 <div class="summary" id="summary">
                     <h2>Summary</h2>
-                    <p>Hi, my name is Nastassia, I am 24 years old. I am from Minsk, Belarus. I am banking specialist, I work with people and smart processes in banking programs. I decided to try myself in IT and start with Front-end free course, which proposes
+                    <p class="about-me">Hi, my name is Nastassia, I am 24 years old. I am from Minsk, Belarus. I am banking specialist, I work with people and smart processes in banking programs. I decided to try myself in IT and start with Front-end free course, which proposes
                         by RSSchool. I like programming, it’s my hobby now. I promise to work hard and study to finish school properly. My main goal is to turn my hobby into my favorite job. I would like to be a good web-developer.</p>
 
                 </div>
@@ -101,19 +101,34 @@
                     </ul>
 
                 </div>
+                <div class="projects" id="projects">
+                    <h2>Projects</h2>
+                    <p>I don't have developer experience yet,<br> I will be learning to become part of the<br> development team and join meaningful<br> projects.</p>
 
-                <div class="english" id="english">
-                    <h2>English</h2>
-                    <p>A2 – Pre-Intermediate</p>
                 </div>
+
+
 
                 <div class="code" id="code">
                     <h2>Example of code</h2>
 
 
                     <code>
+                        <pre>
 
-                       console.log('Hello, World!');
+const  getTypeOfSentence = (sentence) => {
+    const lastChar = sentence [sentence.lenght-1];
+    let sentenceType;
+        if (lastChar === '?') {
+            sentenceType = 'question';
+        } else if (lastChar === '!'){
+            sentenceType = 'exclamation';
+        } else {
+            sentenceType = 'normal';
+        }
+    return `Sentence is ${sentenceType}`;
+};
+                        </pre>
                     </code>
 
 
@@ -123,20 +138,27 @@
                     <p>Polessky State University, Banking Faculty</p>
 
                 </div>
-                <div class="projects" id="projects">
-                    <h2>Projects</h2>
-                    <p>I don't have developer experience yet, I will be learning to become part of the development team and join meaningful projects.</p>
-
+                <div class="english" id="english">
+                    <h2>English</h2>
+                    <p>A2 – Pre-Intermediate</p>
                 </div>
+
             </section>
         </div>
     </main>
 
     <footer>
-        <div class="container">
-            <p>Hello, World!</p>
+        <div class="container footer-container">
+            <section class="ghlink">
+                <a href="https://github.com/1Nastassia"><img src="./assets/github.svg">
+                </a>
+                <p>Nastassia Khanko, 2022</p>
+            </section>
+            <section class="rsslink">
+                <a href="https://rs.school/js-stage0/"><img src="./assets/rs_school_js.svg">
+                </a>
+            </section>
         </div>
-
     </footer>
 </body>
 

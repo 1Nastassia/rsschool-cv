@@ -82,7 +82,6 @@ header {
 .education,
 .projects {
     width: 45%;
-    height: 270px;
     padding: 20px;
     margin: 0 20px;
     border-top: 5px dotted rgba(191, 189, 189, 0.7);
@@ -108,8 +107,6 @@ header {
     color: #939594;
 }
 code {
-    position: relative;
-    left: 35px;
     font-size: large;
 }
 .main-container a {
@@ -121,10 +118,39 @@ li {
 }
 .skills li,
 .courses li {
-    list-style-image: url(./assets/editsquare_120033.svg);
-    color: black;
+    list-style-type: circle;
+    /* list-style-image: url(./assets/editsquare_120033.svg); */
+    /*color: black;*/
 }
 .main-container ul img {
     width: 25px;
     height: 18px;
+}
+.about-me {
+    max-width: 500px;
+}
+.ghlink {
+    display: flex;
+    align-items: center;
+}
+.ghlink img {
+    width: 35px;
+    height: 25px;
+}
+
+/*.rsslink {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}*/
+.rsslink img {
+    width: 90px;
+    height: 50px;
+}
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
 }
