@@ -8,7 +8,6 @@ body {
     justify-content: space-between;
     background: rgb(233, 231, 231);
     font-family: 'Montserrat', sans-serif;
-    /*min-height: 100vh;*/
     margin: 0;
     padding: 0;
 }
@@ -77,6 +76,15 @@ h1 {
     flex-wrap: wrap;
 }
 
+.projects a {
+    color: #252525;
+    transition: color 0.5s;
+}
+
+.projects a:hover {
+    color: #939594;
+}
+
 .summary,
 .contacts,
 .skills,
@@ -130,8 +138,6 @@ li {
 .skills li,
 .courses li {
     list-style-type: circle;
-    /* list-style-image: url(./assets/editsquare_120033.svg); */
-    /*color: black;*/
 }
 
 .main-container ul img {
@@ -153,14 +159,6 @@ li {
     height: 35px;
 }
 
-
-/*.rsslink {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 20px;
-}*/
-
 .rsslink img {
     width: 90px;
     height: 50px;
@@ -173,9 +171,3 @@ li {
     padding: 0 20px;
     margin: 0 10px;
 }
-
-
-/*.name-and-year {
-    display: flex;
-    align-items: center;
-}*/
