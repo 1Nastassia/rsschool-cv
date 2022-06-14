@@ -17,7 +17,8 @@ html {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1400px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -77,12 +78,12 @@ h1 {
 }
 
 .projects a {
-    color: #252525;
+    color: #939292;
     transition: color 0.5s;
 }
 
 .projects a:hover {
-    color: #939594;
+    color: #494949;
 }
 
 .summary,
@@ -114,12 +115,12 @@ h1 {
 
 .contacts a {
     text-decoration: none;
-    color: #252525;
+    color: #939292;
     transition: color 0.5s;
 }
 
 .contacts a:hover {
-    color: #939594;
+    color: #494949;
 }
 
 code {
@@ -169,5 +170,4 @@ li {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 20px;
-    margin: 0 10px;
 }
