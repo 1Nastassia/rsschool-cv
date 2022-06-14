@@ -1,3 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(233, 231, 231);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+header,
+footer {
     background: gray;
+}
+
+header {
+    padding-top: 5px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    line-height: 35px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #252525;
+    transition: color 0.5s;
+    margin: 0 5px;
+}
+
+.nav-link:hover {
+    color: #939594;
+}
+
+.me-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.image {
+    padding: 10px;
+}
+
+.myfoto {
+    border-radius: 50%;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.projects a {
+    color: #939292;
+    transition: color 0.5s;
+}
+
+.projects a:hover {
+    color: #494949;
+}
+
+.summary,
+.contacts,
+.skills,
+.english,
+.courses,
+.code,
+.education,
+.projects {
+    width: 47%;
+    padding: 20px;
+    margin: 0 20px;
+    border-top: 5px dotted rgba(191, 189, 189, 0.7);
+}
+
+@media (max-width: 768px) {
+    .summary,
+    .contacts,
+    .skills,
+    .english,
+    .courses,
+    .code,
+    .education,
+    .projects {
+        width: 100%;
+    }
+}
+
+.contacts a {
+    text-decoration: none;
+    color: #939292;
+    transition: color 0.5s;
+}
+
+.contacts a:hover {
+    color: #494949;
+}
+
+code {
+    font-size: large;
+}
+
+.main-container a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.skills li,
+.courses li {
+    list-style-type: circle;
+}
+
+.main-container ul img {
+    width: 25px;
+    height: 18px;
+}
+
+.about-me {
+    max-width: 500px;
+}
+
+.ghlink {
+    display: flex;
+    align-items: center;
+}
+
+.ghlink img {
+    width: 45px;
+    height: 35px;
+}
+
+.rsslink img {
+    width: 90px;
+    height: 50px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
 }
